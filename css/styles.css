@@ -70,7 +70,7 @@ header .logo.link, .nav-item .link {
 
 
 
-.menu-item.current {
+.nav-item .current {
     /* text-decoration: underline; */
     color: var(--filter-btn-color);
     position: relative;
