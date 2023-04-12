@@ -51,8 +51,6 @@ h1,h2,h3,h4,h5,h6,p {
     font-size:16px;
     letter-spacing: 0.02em;
     color: var(--heading-color-2);
-
-    transition: color 250ms var(--timing);
 }
 
 .menu-item:hover,
@@ -103,9 +101,6 @@ header .logo.link, .nav-item .link {
 
 .logo span {
     color:var(--heading-color-2);
-
-    transition: color 250ms var(--timing);
-
 }
 
 .logo span:hover,
@@ -140,8 +135,6 @@ header {
 .email {
     letter-spacing: 0.02em;
     color: var(--p-font-color);
-
-    transition: color 250ms var(--timing);
 }
 
 .email:hover,
@@ -214,8 +207,6 @@ header {
     padding: 16px 32px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
-    transition: background-color 250ms var(--timing);
 }
 
 .order-button:hover,
@@ -379,9 +370,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    transition: background-color 250ms var(--timing);
-
 }
 
 .social-media-link .link:hover,
@@ -438,9 +426,14 @@ header {
     width: 100%;
     fill: currentColor;
     color: #8e8f99;
-    transition: color 250ms var(--timing), border-color 250ms var(--timing);
-
 }
+
+.customer-link:hover,
+.customer-link:focus {
+    color:var(--filter-btn-bg-active-color);
+    border-color: var(--filter-btn-bg-active-color);
+}
+
 
 
 .customers-item:not(:last-child) {
@@ -456,11 +449,6 @@ header {
     
 }
 
-.customer-link:hover,
-.customer-link:focus {
-    color:var(--filter-btn-bg-active-color);
-    border-color: var(--filter-btn-bg-active-color);
-}
 
 
 
@@ -507,9 +495,6 @@ header {
     margin: 0;
     /* padding-top: 8px;
     padding-bottom: 8px; */
-
-    transition: background-color 250ms var(--timing);
-
 }
 
 .social-media-links .social-media-link .link:hover,
@@ -580,8 +565,6 @@ header {
     border-radius: 4px;
     border: 1px solid var(--border-color);
     padding: 12px 24px;
-
-    transition: color 250ms var(--timing), border-color 250ms var(--timing), background-color 250ms var(--timing), box-shadow 250ms var(--timing);
 }
 
 
@@ -622,8 +605,6 @@ img {
 
 .portfolio-link {
     display: block;
-
-    transition: box-shadow 250ms var(--timing);
 }
 
 .portfolio-item-info {
@@ -636,3 +617,39 @@ img {
 .portfolio-item .desc {
     padding-left: 16px;
 } */
+
+
+/* TRANSITIONS */
+
+/* Color transition */
+
+.filter-button,
+.menu-item,
+.customer-link,
+.email,
+.logo span {
+    transition: color 250ms var(--timing);
+ }
+
+ /* bg color transition */
+
+ .order-button,
+ .social-media-link .link,
+ .social-media-links .social-media-link .link,
+ .filter-button {
+    transition: background-color 250ms var(--timing);
+ }
+
+ /* shadow transition */
+
+ .filter-button,
+ .portfolio-link {
+    transition: box-shadow 250ms var(--timing);
+ }
+
+ /* border color transition */
+ 
+ .customer-link,
+ .filter-button {
+    transition: border-color 250ms var(--timing);
+ }
