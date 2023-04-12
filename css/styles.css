@@ -624,8 +624,8 @@ header {
 
 .portfolio-img-desc {
     padding-top: 40px;
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
 
     color:var(--filter-btn-bg-color);
     letter-spacing: 0.02px;
