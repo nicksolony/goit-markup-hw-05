@@ -577,7 +577,7 @@ header {
 .modal-window button {
     position: absolute;
     top:0;
-    right: 0;
+    right: 0    ;
     
     border-radius:50%;
     width: 24px;
