@@ -565,9 +565,8 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
-    width: 408px;
-    height: 576px;
+    width: calc(100% * 0.283333333);
+    height: calc(100% * 0.852071006);
     border-radius: 4px;
     background-color: rgba(252, 252, 252, 1);
 
@@ -577,12 +576,26 @@ header {
 .modal-window button {
     position: absolute;
     top:0;
-    right: 0    ;
+    right: 0;
+    transform: translate(-24px,24px);
     
     border-radius:50%;
     width: 24px;
-
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--border-color);
+    border-width: 1px;
+    border-color:rgba(0, 0, 0, 0.1);
 }
+
+.close-modal {
+    width: 8px;
+    height: 8px;
+    fill: var(--heading-color-2);
+}
+
 
 /* PORTFOLIO HTML STYLING */
 /* adding styling to filter buttons */
