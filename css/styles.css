@@ -439,6 +439,8 @@ header {
     width: 100%;
     fill: currentColor;
     color: #8e8f99;
+
+    transition: color 250ms var(--timing), border-color 250ms var(--timing);
 }
 
 .customer-link:hover,
@@ -553,12 +555,13 @@ header {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 1;
-    transition: opacity 250ms var(--timing);
+    transition: opacity 250ms var(--timing), visibility 250ms var(--timing);
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
@@ -640,6 +643,8 @@ header {
     border-radius: 4px;
     border: 1px solid var(--border-color);
     padding: 12px 24px;
+
+    transition: color 250ms var(--timing), background-color 250ms var(--timing), box-shadow 250ms var(--timing), border-color 250ms var(--timing);
 }
 
 
@@ -709,6 +714,8 @@ img {
 
 .portfolio-link {
     display: block;
+
+    transition: box-shadow 250ms var(--timing);
 }
 
 .portfolio-item-info {
@@ -727,33 +734,18 @@ img {
 
 /* Color transition */
 
-.filter-button,
 .menu-item,
-.customer-link,
 .email,
 .logo span {
     transition: color 250ms var(--timing);
  }
 
+ 
  /* bg color transition */
 
  .order-button,
  .social-media-link .link,
- .social-media-links .social-media-link .link,
- .filter-button {
+ .social-media-links .social-media-link .link {
     transition: background-color 250ms var(--timing);
  }
 
- /* shadow transition */
-
- .filter-button,
- .portfolio-link {
-    transition: box-shadow 250ms var(--timing);
- }
-
- /* border color transition */
- 
- .customer-link,
- .filter-button {
-    transition: border-color 250ms var(--timing);
- }
